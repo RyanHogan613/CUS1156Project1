@@ -1,0 +1,10 @@
+TANKO JAPANESE FUSION,2018-03-08,rhogan,4,This place has good food,41722947
+TANKO JAPANESE FUSION,2018-03-08,rhogan,2,This place sucks,41722947
+TANKO JAPANESE FUSION,2018-03-11,rhogan,2,This place sucked,41722947
+JERUSALEM II PIZZA,2018-03-11,rhogan,4,I loved this place,40992205
+TACORIA MEZA,2018-03-11,rhogan,5,Best food ever,41386840
+MI-NE SUSHI TOTOYA,2018-03-11,rhogan,3,The food was very cold, do not recommend ,50050508
+JERUSALEM II PIZZA,2018-03-11,rhogan,4,This place had great food,40992205
+TOKYO BAY,2018-03-11,rhogan,3,I really liked thier sushi,50019199
+FIORE DIMARE,2018-03-11,rhogan,4,Excellent pasta,41051001
+LIC Bagels,2018-03-11,rhogan,2,The bagels were really dry,41067497
