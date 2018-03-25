@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * RestaurantList controls the ArrayList of restaurants, allows the user
@@ -22,21 +23,17 @@ public class RestaurantList {
      * @param rest
      * @return the restaurant if found by name
      */
-    public String findRestaurantByName(String rest) {
+    public List<Restaurant> findRestaurantByName(String rest) {
 
-        ArrayList<String> temp = new ArrayList<>();
+        List<Restaurant> temp = new ArrayList<>();
 
         for (Restaurant r : restList) {
             if (r.getName().equalsIgnoreCase(rest)) {
-                temp.add(r.toString() + "\n");
+                temp.add(r);
             }
         }
 
-        if (temp.isEmpty()) {
-            return "No restaurant found";
-        } else {
-            return temp.toString();
-        }
+        return temp;
     }
 
     /**
@@ -44,21 +41,17 @@ public class RestaurantList {
      * @param cuisine
      * @return the list restaurants if found by cuisine
      */
-    public String findRestaurantByCuisine(String cuisine) {
+    public List<Restaurant> findRestaurantByCuisine(String cuisine) {
 
-        ArrayList<String> temp = new ArrayList<>();
+        List<Restaurant> temp = new ArrayList<>();
 
         for (Restaurant r : restList) {
             if (r.getCuisine().equalsIgnoreCase(cuisine)) {
-                temp.add(r.toString() + "\n");
+                temp.add(r);
             }
         }
 
-        if (temp.isEmpty()) {
-            return "No restaurant found";
-        } else {
-            return temp.toString();
-        }
+        return temp;
     }
 
     /**
@@ -66,21 +59,17 @@ public class RestaurantList {
      * @param city
      * @return the list restaurants if found by city
      */
-    public String findRestaurantByCity(String city) {
+    public List<Restaurant> findRestaurantByCity(String city) {
 
-        ArrayList<String> temp = new ArrayList<>();
+        List<Restaurant> temp = new ArrayList<>();
 
         for (Restaurant r : restList) {
             if (r.getCity().equalsIgnoreCase(city)) {
-                temp.add(r.toString() + "\n");
+                temp.add(r);
             }
         }
 
-        if (temp.isEmpty()) {
-            return "No restaurant found";
-        } else {
-            return temp.toString();
-        }
+      return temp;
     }
 
 
@@ -89,22 +78,19 @@ public class RestaurantList {
      * @param state
      * @return the list of restaurants found by state
      */
-    public String findRestaurantByState(String state) {
+    public List<Restaurant> findRestaurantByState(String state) {
 
-        ArrayList<String> temp = new ArrayList<>();
+        List<Restaurant> temp = new ArrayList<>();
 
         for (Restaurant r : restList) {
             if (r.getState().equalsIgnoreCase(state)) {
-                temp.add(r.toString() + "\n");
+                temp.add(r);
             }
         }
 
-        if (temp.isEmpty()) {
-            return "No restaurant found";
-        } else {
-            return temp.toString();
-        }
+        return temp;
     }
+
 
 
     /**
@@ -112,21 +98,17 @@ public class RestaurantList {
      * @param id
      * @return the list of restaurants found by id
      */
-    public String findRestaurantByID(String id) {
+    public List<Restaurant> findRestaurantByID(String id) {
 
-        ArrayList<String> temp = new ArrayList<>();
+        List<Restaurant> temp = new ArrayList<>();
 
         for (Restaurant r : restList) {
             if (r.getId().equals(id)) {
-                temp.add(r.toString() + "\n");
+                temp.add(r);
             }
         }
 
-        if (temp.isEmpty()) {
-            return "No restaurant found";
-        } else {
-            return temp.toString();
-        }
+        return temp;
     }
 
     /**

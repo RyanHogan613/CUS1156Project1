@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * ReviewList controls the ArrayList of reviews, allows the access of
@@ -26,21 +27,17 @@ public class ReviewList {
      * @param rID
      * @return the Review with the corresponding restaurant id
      */
-    public String getReviewByRestID(String rID) {
+    public List<Reviews> getReviewByRestID(String rID) {
 
-        ArrayList<String> temp = new ArrayList<>();
+        List<Reviews> temp = new ArrayList<>();
 
         for (Reviews r : reviewList) {
             if (r.getID().equals(rID)) {
-                temp.add(r.toString() + "\n");
+                temp.add(r);
             }
         }
 
-        if (temp.isEmpty()) {
-            return "No review found";
-        } else {
-            return temp.toString();
-        }
+        return temp;
     }
 
     /**
@@ -48,21 +45,17 @@ public class ReviewList {
      * @param username
      * @return the Review with the corresponding username
      */
-    public String getReviewByUname(String username) {
+    public List<Reviews> getReviewByUname(String username) {
 
-        ArrayList<String> temp = new ArrayList<>();
+        List<Reviews> temp = new ArrayList<>();
 
         for (Reviews r : reviewList) {
             if (r.getUserName().equals(username)) {
-                temp.add(r.toString() + "\n");
+                temp.add(r);
             }
         }
 
-        if (temp.isEmpty()) {
-            return "No review found";
-        } else {
-            return temp.toString();
-        }
+        return temp;
     }
 
     /**
